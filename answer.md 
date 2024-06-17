@@ -1,0 +1,144 @@
+### Developer Environment Setup Documentation
+
+This document outlines the steps I took to set up a development environment including operating system installation, text editor setup, version control configuration, programming language installation, database setup, and additional tools and customizations.
+
+---
+
+#### 1. Select Your Operating System (OS)
+
+**Operating System:** Windows 11
+
+**Steps:**
+- Visit the official Windows 11 download page: [Windows 11 Download](https://www.microsoft.com/software-download/windows11).
+- Click on "Download Now" to get the Windows 11 Installation Assistant.
+- Run the Installation Assistant and follow the on-screen instructions to upgrade to or install Windows 11.
+- Restart your computer as required to complete the installation.
+
+**Troubleshooting:**
+- Ensure your PC meets the minimum system requirements for Windows 11.
+- Disable antivirus software temporarily if the installation gets blocked.
+
+---
+
+#### 2. Install a Text Editor or Integrated Development Environment (IDE)
+**Text Editor:** Visual Studio Code
+
+**Steps:**
+- Visit the Visual Studio Code download page: [Visual Studio Code Download](https://code.visualstudio.com/Download).
+- Select the appropriate installer for your OS and download it.
+- Run the installer and follow the setup instructions to install Visual Studio Code.
+- Launch Visual Studio Code to verify the installation.
+
+**Troubleshooting:**
+- Ensure you have administrative privileges to install software.
+- Re-download the installer if the installation fails.
+
+---
+
+#### 3. Set Up Version Control System
+**Version Control System:** Git and GitHub
+
+**Steps:**
+- Visit the Git download page: [Git Download](https://git-scm.com/downloads).
+- Download the Git installer for Windows and run it.
+- Follow the installation instructions, opting for default settings unless specific customizations are needed.
+- Verify the installation by opening Command Prompt and typing `git --version`.
+
+**GitHub Account:**
+- Visit GitHub: [GitHub](https://github.com).
+- Create a new account or log in to an existing account.
+
+**Initialize a Git Repository:**
+- Open Command Prompt or Git Bash.
+- Navigate to your project directory using `cd path/to/your/project`.
+- Initialize a new Git repository with `git init`.
+- Create a new file (e.g., `README.md`) and add some initial content.
+- Add the file to the staging area using `git add README.md`.
+- Commit the changes with `git commit -m "Initial commit"`.
+- Push the local repository to GitHub:
+  ```sh
+  git remote add origin https://github.com/your-username/your-repository.git
+  git push -u origin master
+  ```
+
+**Troubleshooting:**
+- Check network connections if pushing to GitHub fails.
+- Reconfigure Git user credentials if there are authentication issues.
+
+---
+
+#### 4. Install Necessary Programming Languages and Runtimes
+**Programming Language:** Python
+
+**Steps:**
+- Visit the Python official website: [Python Download](http://www.python.org).
+- Download the latest stable release of Python for Windows.
+- Run the installer, ensuring to check the "Add Python to PATH" option.
+- Follow the setup instructions to complete the installation.
+- Verify the installation by opening Command Prompt and typing `python --version`.
+
+**Troubleshooting:**
+- Ensure PATH is correctly set by reopening Command Prompt and typing `python`.
+- Reinstall if there are issues with the initial setup.
+
+---
+
+#### 5. Install Package Managers
+**Package Manager:** pip (Python)
+
+**Steps:**
+- pip is included with Python installations 3.4 and later.
+- Verify pip installation by typing `pip --version` in Command Prompt.
+
+**Troubleshooting:**
+- Reinstall Python ensuring that the option to install pip is checked.
+
+---
+
+#### 6. Configure a Database
+**Database:** MySQL
+
+**Steps:**
+- Visit the MySQL download page: [MySQL Download](https://dev.mysql.com/downloads/windows/installer/5.7.html).
+- Download and run the MySQL Installer.
+- Choose "Custom" installation to select specific components or "Developer Default" for a typical setup.
+- Follow the installation steps, configuring MySQL server settings as prompted.
+- Set a root password and configure the server as required.
+- Verify the installation by opening MySQL Workbench or connecting via Command Prompt.
+
+**Troubleshooting:**
+- Check firewall settings if the server fails to start.
+- Ensure the MySQL service is running.
+
+---
+
+#### 7. Set Up Development Environments and Virtualization (Optional)
+**Virtualization Tool:** Docker (Optional)
+
+**Steps:**
+- Visit the Docker download page: [Docker Desktop](https://www.docker.com/products/docker-desktop).
+- Download and install Docker Desktop for Windows.
+- Follow the installation instructions and restart your computer if necessary.
+- Verify the installation by opening Command Prompt and typing `docker --version`.
+
+**Troubleshooting:**
+- Ensure virtualization is enabled in the BIOS.
+- Consult Docker documentation for specific error messages.
+
+---
+
+#### 8. Explore Extensions and Plugins
+**Visual Studio Code Extensions:**
+- Open Visual Studio Code.
+- Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+- Search for and install extensions such as:
+  - Python: For Python support.
+  - GitLens: For enhanced Git capabilities.
+  - Prettier: For code formatting.
+  - ESLint: For JavaScript linting.
+
+**Troubleshooting:**
+- Ensure extensions are compatible with your version of Visual Studio Code.
+- Restart Visual Studio Code if extensions do not load properly.
+
+---
